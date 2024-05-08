@@ -1,10 +1,11 @@
 //-- Variabili --\\
 let form = document.forms.iscrizione;
 
+//-- Div errore --\\
+let div = document.getElementById("errore");
+
 //-- Funzione check form --\\
 function check() {
-    //-- Div errore --\\
-    let div = document.getElementById("errore");
 
     //-- Dati anagrafici --\\
     let nome = form.nome.value;
