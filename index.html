@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="it">
+    <head>
+        <title>Registrati</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Registrati">
+        <meta name="keywords" content="HTML, CSS, JavaScript , Register, Scuola, Informatica">
+        <meta name="author" content="Niccolo' Gioli">
+        <link rel="stylesheet" type="text/css" href="style.css">
+      </head>
+
+      <body>
+        <div id="div-form">
+            <h1>Crea il tuo account</h1>
+        <form name="iscrizione" autocomplete="off">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <label for="nome" name="nome" class="testo">Nome</label>
+                    <input type="text" id="nome" placeholder="Inserisci il tuo nome" required>
+                </div>
+                <div class="grid-item">
+                    <label for="cognome" name="cognome" class="testo">Cognome</label>
+                    <input type="text" id="cognome" placeholder="Inserisci il tuo cognome" required>
+                </div>
+                <div class="grid-item">
+                    <label for="date" name="date" class="testo">Data di nascita</label>
+                    <input type="date" name="data" class="testo" required>
+                </div>
+                <div class="grid-item">
+                    <label for="gender" name="gender" class="testo">Genere</label>
+                    <br>
+                    <br>
+                    <input type="radio" name="genere" id="maschio" value="maschio" required>
+                    <label for="maschio">Maschio</label>
+                    <input type="radio" name="genere" id="femmina" class="femmina-radio" value="femmina" required>
+                    <label for="femmina">Femmina</label>
+                </div>
+                <div class="grid-item">
+                    <label for="email" name="email" class="testo">Email</label>
+                    <input type="email" name="email" class="testo" placeholder="Inserisci la tua email" required>
+                </div>
+                <div class="grid-item">
+                    <label for="phone" name="phone" class="testo">Telefono</label>
+                    <input type="tel" name="phone" class="testo" placeholder="Formato: 123 4567890" pattern="[0-9]{3} [0-9]{7}" required>
+                </div>
+                <div class="grid-item">
+                    <label for="nick" name="nick" class="testo">Nickname</label>
+                    <input type="text" name="nick" class="testo" placeholder="Crea un nickname" required>
+                </div>
+                <div class="grid-item">
+                    <label for="password" name="phone" class="testo">Password</label>
+                    <input type="password" name="password" class="testo" placeholder="Crea una password" required>
+                </div>
+                <div class="grid-item">
+                    <input type="submit" value="Registrati">
+                    <input type="reset" value="Cancella i dati">
+                    <br>
+                </div>
+            </div>
+            <p id="testo-piccolo">Fatto da Niccolò Gioli</p>
+        </form>
+        </div>
+        <script src="script.js"></script>
+      </body>
+</html>
