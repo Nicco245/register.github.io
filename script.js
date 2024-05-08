@@ -28,7 +28,7 @@ function check() {
         }else{
             //-- Check lunghezza password --\\
             if(password.length<8){
-                div.innerHTML = "Errore: lunghezza password minore di 8 caratteri";
+                div.innerHTML = "Errore: la password deve essere lunga almeno 8 caratteri";
                 div.style.visibility = "visible";
                 return false;
             }else{
