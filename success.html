@@ -15,8 +15,25 @@
             <h1 class="centrato">Account registrato!</h1>
             <br><br>
             <p id="testo-grande">Hai registrato il tuo account.</p>
+            <br>
+            <p class="testo-timer" id="testo">Sarai reinderizzato alla home tra 5 secondi</p>
+            <br>
+            <progress value="0" max="5" id="bar"></progress>
             <br><br>
             <p id="testo-piccolo">Fatto da Niccolò Gioli</p>
         </div>
+        <script>
+          let tempoIniz = 5;
+          let tempo = tempoIniz;
+          let timer = setInterval(function() {
+            if(tempo<=0){
+              clearInterval(timer);
+              window.location = "home.html";
+            }
+            document.getElementById("bar").value = tempoIniz - tempo;
+            document.getElementById("testo").innerHTML = `Sarai reinderizzato alla home tra ${tempo} secondi`;
+            tempo-=1;
+          }, 1000);
+        </script>
       </body>
 </html>
