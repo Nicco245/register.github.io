@@ -1,6 +1,11 @@
+
 body {
     /*background-image: linear-gradient(to right, rgb(189, 27, 189), rgb(218, 115, 218), rgb(235, 185, 235));*/
     background: linear-gradient(90deg, rgba(76,72,151,1) 1%, rgba(9,9,121,1) 28%, rgba(0,212,255,1) 100%);
+}
+
+.verde {
+    background: rgb(53, 173, 53);
 }
 
 .testo {
@@ -11,6 +16,12 @@ body {
 #testo-piccolo {
     padding-left: 12px;
     font-size: small;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#testo-grande {
+    text-align: center;
+    font-size: large;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -181,4 +192,21 @@ input[type=reset] {
 
 input[type=reset]:hover {
     background-color: #595e59;
+}
+
+
+.centrato {
+    text-align: center;
+}
+
+#div-succ {
+    width: 60%;
+    background-color: white;
+    margin: auto;
+    position: absolute;
+    top: 110px;
+    left: 350px;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
 }
