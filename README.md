@@ -1,2 +1,2 @@
 # register.github.io
-A simple register page made with Html 5, Css and JavaScript.
+A simple register page made with Html, Css and JavaScript.
